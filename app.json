@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-react-native-app",
-    "slug": "expo-react-native-app",
+    "name": "try-react-native-app",
+    "slug": "try-react-native-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
