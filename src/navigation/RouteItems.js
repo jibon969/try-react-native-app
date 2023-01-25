@@ -18,6 +18,9 @@ export const screens = {
     SettingStack: 'SettingStack',
     Setting: 'Setting',
 
+    ProductListStack: 'ProductListStack',
+    ProductList: 'ProductList',
+
 
 };
 
@@ -117,5 +120,22 @@ export const routes = [
         title: 'Setting',
         showInTab: false,
         showInDrawer: false,
+    },
+
+
+    // Product List ===========================================================
+    {
+        name: screens.ProductListStack,
+        focusedRoute: screens.ProductListStack,
+        title: 'ProductList',
+        showInTab: false,
+        showInDrawer: true,
+    },
+    {
+        name: screens.ProductList,
+        focusedRoute: screens.ProductListStack,
+        title: 'ProductList',
+        showInTab: false,
+        showInDrawer: true,
     },
 ];
