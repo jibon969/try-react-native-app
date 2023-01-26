@@ -19,7 +19,6 @@ const App = () => {
     )
 };
 
-
 const styles = StyleSheet.create({
     safeArea: {
         flex: 1,

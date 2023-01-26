@@ -38,9 +38,8 @@ const ProductListStackNavigator = () => {
             ),
         })}>
             <Stack.Screen
-                name="ProductList"
-                component={ProductListScreen}
-            />
+                name="Product List"
+                component={ProductListScreen}/>
         </Stack.Navigator>
     )
 };

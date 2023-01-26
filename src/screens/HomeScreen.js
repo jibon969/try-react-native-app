@@ -1,10 +1,10 @@
 import {StyleSheet, SafeAreaView} from 'react-native'
 import Home from '../../src/components/Home/Home'
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = () => {
     return (
         <SafeAreaView style={styles.contactArea}>
-            <Home navigation={navigation}/>
+            <Home/>
         </SafeAreaView>
     )
 };

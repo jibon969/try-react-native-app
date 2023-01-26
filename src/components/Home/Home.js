@@ -1,12 +1,10 @@
-import {View, StyleSheet, Text, TouchableOpacity} from 'react-native'
+import {View, StyleSheet, Text} from 'react-native'
 
-const Home = ({navigation}) => {
+const Home = () => {
     return (
         <View style={styles.homeContainer}>
             <View style={styles.contact}>
-                <TouchableOpacity onPress={()=>navigation.navigate("ProductListStack")}>
-                    <Text style={styles.homeTitle}>Hello, World ! </Text>
-                </TouchableOpacity>
+                <Text style={styles.homeTitle}>Hello, Home </Text>
             </View>
         </View>
     )
@@ -29,9 +27,7 @@ const styles = StyleSheet.create({
         })
     },
     homeTitle: {
-        textAlign: "center",
-        padding:10,
-        backgroundColor:"red",
+        textAlign: "center"
     }
 });
 

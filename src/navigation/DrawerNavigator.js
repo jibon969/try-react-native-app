@@ -123,16 +123,6 @@ const CustomDrawerContent = (props) => {
                 )}
             </View>
             {/*/End Perfume*/}
-
-            {/*Offer*/}
-            <DrawerItem
-                label={() => (
-                    <Text style={styles.drawerLabel2}>
-                        Product List
-                    </Text>
-                )}
-                style={styles.drawerItem2}
-            />
         </DrawerContentScrollView>
     )
 };
