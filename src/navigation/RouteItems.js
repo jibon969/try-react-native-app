@@ -1,6 +1,9 @@
 import * as React from 'react'
-import Icon from 'react-native-vector-icons/FontAwesome'
-import SettingStackNavigator from "./stack-navigators/SettingStackNavigator";
+import {FontAwesome} from '@expo/vector-icons';
+import {MaterialIcons} from '@expo/vector-icons';
+import {Ionicons} from '@expo/vector-icons';
+import {AntDesign} from '@expo/vector-icons';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 export const screens = {
     HomeTab: 'HomeTab',
@@ -33,7 +36,7 @@ export const routes = [
         showInTab: false,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <FontAwesome name="home" size={focused ? 20 : 20} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.HomeStack,
@@ -42,7 +45,7 @@ export const routes = [
         showInTab: true,
         showInDrawer: true,
         icon: (focused) =>
-            <Icon name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <FontAwesome name="home" size={focused ? 20 : 20} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.Home,
@@ -51,7 +54,7 @@ export const routes = [
         showInTab: true,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="home" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <FontAwesome name="home" size={focused ? 20 : 20} color={focused ? '#551E18' : '#000'}/>,
     },
 
     // ContactStack =============================================================
@@ -62,7 +65,7 @@ export const routes = [
         showInTab: true,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <MaterialIcons name="phone" size={focused ? 20 : 20} color={focused ? '#551E18' : '#000'}/>
     },
     {
         name: screens.Contact,
@@ -122,20 +125,23 @@ export const routes = [
         showInDrawer: false,
     },
 
-
-    // Product List ===========================================================
+    // ProductListStack ===========================================================
     {
         name: screens.ProductListStack,
         focusedRoute: screens.ProductListStack,
         title: 'ProductList',
-        showInTab: false,
-        showInDrawer: true,
+        showInTab: true,
+        showInDrawer: false,
+        icon: (focused) =>
+            <MaterialIcons name="grid-on" size={focused ? 20 : 20} color={focused ? '#551E18' : '#000'}/>
     },
     {
         name: screens.ProductList,
         focusedRoute: screens.ProductListStack,
         title: 'ProductList',
-        showInTab: false,
-        showInDrawer: true,
+        showInTab: true,
+        showInDrawer: false,
+        icon: (focused) =>
+            <MaterialIcons name="grid-on" size={focused ? 20 : 20} color={focused ? '#551E18' : '#000'}/>
     },
 ];
